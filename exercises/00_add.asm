@@ -9,14 +9,15 @@
 
 # Questions: What is a register? (put an x in the correct answer)
 #
-# - [ ] A memory in the 32-bit processor
+# - [X] A memory in the 32-bit processor
 # - [ ] A variable in memory
 
 my_code: # <- Label allows a name to be associated with an address.
 
 li t0, 32       # load immediate: Load a number on max 12 bit in a register
-addi t0, t0, 00 # Add operand 1 (t0) and an immediate and save the result (t0)
+addi t0, t0, 32 # Add operand 1 (t0) and an immediate and save the result (t0)
 #     |   \ operand 1
 #     destination
 
 # Bonus: have 64 in a register in a single instruction
+li t1, 64       # Use load immediate to set 64 in register in a single instruction
