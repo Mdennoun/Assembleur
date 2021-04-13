@@ -22,7 +22,7 @@ message: .asciz "Hello ASM from .data"
 # - What are the hexadecimal values ​​present in .data?
 
 # la: Load Address, load an address (label) into a register
-the a0, ??? # argument of the system call
+la a0, ??? # argument of the system call
 li a7, ???  # system call number 4 according to the RARS printString doc
 ecall       # used to switch to kernel mode to make the system call
 
